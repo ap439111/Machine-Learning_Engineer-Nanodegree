@@ -56,9 +56,9 @@ I have tried the following three models and considered the model **accuracy** sc
     ii. Transfer Learning Model using VGG19 pre-trained model (TL-VGG19)
     iii. Transfer Learning Model using ResNet152 pre-trained model (TL-ResNet152)
 
-All the three models mentioned above are trained on the training set and evaluated on the testing set. The size of the training set is 5218 and the testing set is 624. The models’ accuracies and F1-score are compared.
+All the three models mentioned above are trained on the training set and evaluated on the testing set. The size of the training set is 5218 and the testing set is 624. The models’ accuracies and F1-score are compared. The X-ray images are divided into two classes: Class '0'  are those with Pneumonia and Class '1' are those without Pneumonia or Normal X-rays.
 
-The benchmark model **CNN** has a training and testing accuracy of 95.07% and 77.04%, respectively. The **TL-VGG19** model has a training accuracy of 84.22% and a testing accuracy of 65.22%. Similarly, **TL-ResNet152** model has the training and testing accuracy of 92.14% and 85.26%, respectively. 
+The benchmark model **CNN** has a training and testing accuracy of 95.07% and 77.04%, respectively. The F1-scores for Class 0 and Class 1 are 0.60 and 0.84, respectively. The **TL-VGG19** model has a training accuracy of 84.22% and a testing accuracy of 65.22%. The F1-scores for Class 0 and Class 1 are 0.18 and 0.78, respectively. Similarly, **TL-ResNet152** model has the training and testing accuracy of 92.14% and 85.26%, respectively. The F1-scores for Class 0 and Class 1 are 0.78 and 0.89, respectively.
 
 Out of three models, I have confirmed the **TL-ResNet152** as the best classifier because of its better testing accuracy and F1-score. 
 
