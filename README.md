@@ -53,23 +53,18 @@ The following python libraries are required to run the notebooks:
 I have tried the following three models and considered the model **accuracy** score and F1-score as the metric to evaluate the model quality.
 
     i. Convolutional Neural Netwrok (CNN): This model is considered as a benchmark and all the other models’ performance is compared with it.
-    ii. Transfer Learning Model using VGG19 pre-trained model
-    iii. Transfer Learning Model using ResNet152 pre-trained model
+    ii. Transfer Learning Model using VGG19 pre-trained model (TL-VGG19)
+    iii. Transfer Learning Model using ResNet152 pre-trained model (TL-ResNet152)
 
-All the three models mentioned above are trained on the training set and evaluated on the testing set. The size of the training set is 53393 and the testing set is 2284. The models’ accuracies are compared.
+All the three models mentioned above are trained on the training set and evaluated on the testing set. The size of the training set is 5218 and the testing set is 624. The models’ accuracies and F1-score are compared.
 
-The benchmark model **neural network** has a training and testing accuracy of ~64%. **Decision Tree** has a training accuracy of 94.64% and a testing accuracy of 57.77%. Similarly, **K-Nearest Neighbor** has the training and testing accuracy of 68.82% and 61.48%, respectively. **Random Forest** has a training accuracy of 94.64% and a testing accuracy of 59.76%. **Support Vector Machine** has a training accuracy of 60.90% and a testing accuracy of 61.39%.
+The benchmark model **CNN** has a training and testing accuracy of 95.07% and 77.04%, respectively. The **TL-VGG19** model has a training accuracy of 84.22% and a testing accuracy of 65.22%. Similarly, **TL-ResNet152** model has the training and testing accuracy of 92.14% and 85.26%, respectively. 
 
-Out of five models, I have considered Random Forest and K-Nearest for further refinements using the GirdSearchCV. Random Forest has high train accuracy and relatively lower test accuracy. This means the model is behaving differently for the training and testing sets. On the other hand, the K-Nearest Neighbor has both the training and testing accuracy in the same range. 
+Out of three models, I have confirmed the **TL-ResNet152** as the best classifier because of its better testing accuracy and F1-score. 
 
-After refinements, the Random Forest has a training accuracy of 65.40% and a testing accuracy of 64.70%. Thus, the tuned parameters behave in a similar way for both data sets. Similarly, after refinements, the K-Nearest Neighbor has the training and testing accuracy of 73% and 60.8%, respectively. 
+For the nature of the problem chosen and the given data sets, we are convinced that the final model reached a good accuracy which can be improved by expanding the training data sets. 
 
-Out of the two refined models, I have taken the **Random Forest** as the best classifier because of its better testing accuracy. 
-
-For the nature of the problem chosen and the given data sets, we are convinced that the final model reached a good accuracy. The customers’ behavior for an offer can be varying and that could be a reason for the model to have medium accuracy.
-
-The details are explained in the file **project_capstone.pdf** and a [bolgpost](https://anup-pandey123.medium.com/starbucks-capstone-challenge-4a763b207985).
-
+The details are explained in the file **Project_Report_MLED.pdf**.
 <a name="license"></a>
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -77,6 +72,6 @@ The details are explained in the file **project_capstone.pdf** and a [bolgpost](
 
 <a name="acknowledgement"></a>
 ## Acknowledgement
-* We want to thank [Udacity](https://www.udacity.com/) for this project and **Starbucks** for the data sets.
+* We want to thank [Udacity](https://www.udacity.com/) for this project and **Kaggle** for the data sets.
 
 
