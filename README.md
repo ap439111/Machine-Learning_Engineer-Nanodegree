@@ -50,18 +50,13 @@ The following python libraries are required to run the notebooks:
 <a name="results_summary"></a>
 ## Results Summary
 
-I have tried the following five models and considered the model **accuracy** score as the metric to evaluate the model quality.
+I have tried the following three models and considered the model **accuracy** score and F1-score as the metric to evaluate the model quality.
 
-    i. Neural Network: This model is considered as a benchmark and all the other models’ performance is compared with it.
-    ii. Decision Tree Classifie
-    iii. K-nearest Neighbor
-    iv. Random Forest
-    v. Support Vector Machine
-	    
-The features used in training the models are a reward, difficulty, offer_duration_hrs, BOGO, discount, informational, mobile, social, web, age_group, became_member_on, income, income_group, F, M, N, O.
+    i. Convolutional Neural Netwrok (CNN): This model is considered as a benchmark and all the other models’ performance is compared with it.
+    ii. Transfer Learning Model using VGG19 pre-trained model
+    iii. Transfer Learning Model using ResNet152 pre-trained model
 
-
-All the five models mentioned above are trained on the training set and evaluated on the testing set. The size of the training set is 53393 and the testing set is 2284. The models’ accuracies are compared.
+All the three models mentioned above are trained on the training set and evaluated on the testing set. The size of the training set is 53393 and the testing set is 2284. The models’ accuracies are compared.
 
 The benchmark model **neural network** has a training and testing accuracy of ~64%. **Decision Tree** has a training accuracy of 94.64% and a testing accuracy of 57.77%. Similarly, **K-Nearest Neighbor** has the training and testing accuracy of 68.82% and 61.48%, respectively. **Random Forest** has a training accuracy of 94.64% and a testing accuracy of 59.76%. **Support Vector Machine** has a training accuracy of 60.90% and a testing accuracy of 61.39%.
 
